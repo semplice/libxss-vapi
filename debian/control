@@ -1,0 +1,29 @@
+Source: libxss-vapi
+Section: libdevel
+Priority: optional
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.5
+Homepage: https://semplice-linux.org/
+Vcs-Git: https://github.com/semplice/libxss-vapi.git
+Vcs-Browser: https://github.com/semplice/libxss-vapi
+
+Package: libxss-vapi
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libxss1, libxss-dev
+Description: X11 Screen Saver extension library (vala bindings)
+ libXss provides an X Window System client interface to the MIT-SCREEN-SAVER
+ extension to the X protocol.
+ .
+ The Screen Saver extension allows clients behaving as screen savers to
+ register themselves with the X server, to better integrate themselves with
+ the running session.
+ .
+ This package contains the vala bindings for the headers found in
+ libxss-dev.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libScrnSaver
